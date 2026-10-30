@@ -1,0 +1,858 @@
+[
+  {
+    "machine_id": "CNC-M14860",
+    "machine_name": "Titan 5-Axis CNC Milling Center",
+    "industry": "Manufacturing",
+    "type": "CNC Machine",
+    "location": "Bay 3, Precision Machining Hall",
+    "operator": "Company Organiser (Ops Lead)",
+    "role": "organiser",
+    "notes": "",
+    "readings": {
+      "air_temperature_k": 301.5,
+      "process_temperature_k": 311.3,
+      "rotational_speed_rpm": 1375.0,
+      "torque_nm": 54.4,
+      "tool_wear_min": 215.0
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 1,
+        "failure_probability": 72.95,
+        "status": "Failure Likely"
+      },
+      "xgboost": {
+        "prediction": 1,
+        "failure_probability": 80.72,
+        "status": "Failure Likely"
+      },
+      "consensus": {
+        "failure_probability": 76.83,
+        "health_score": 23.2,
+        "risk_level": "CRITICAL",
+        "status": "Critical",
+        "is_calibrated": true
+      },
+      "feature_compatibility": {
+        "status": "FULL_COMPATIBILITY",
+        "is_compatible": true,
+        "full_compatibility": true,
+        "present_features": [
+          "air_temperature_k",
+          "process_temperature_k",
+          "rotational_speed_rpm",
+          "torque_nm",
+          "tool_wear_min"
+        ],
+        "missing_features": [],
+        "coverage_pct": 100.0,
+        "message": "All 5 required sensor parameters match AI4I trained models."
+      }
+    },
+    "top_shap_driver": "Tool Wear (min)",
+    "shap_features": [
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 215.0,
+        "shap_impact": 3.9038,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 54.4,
+        "shap_impact": 1.6386,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1375.0,
+        "shap_impact": 0.9349,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 301.5,
+        "shap_impact": -0.6765,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 311.3,
+        "shap_impact": -0.1281,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      }
+    ],
+    "rul_hours": 17.6,
+    "rul_cycles": 211,
+    "recommendation": "PRE-EMPTIVE INSPECTION: Machine wear approaching 80%. Prepare replacement tooling and calibrate spindle torque.",
+    "validation_warnings": [],
+    "id": "PRED-1010",
+    "timestamp": "2026-10-27 10:50:39"
+  },
+  {
+    "machine_id": "CNC-M14860",
+    "machine_name": "Titan 5-Axis CNC Milling Center",
+    "industry": "Manufacturing",
+    "type": "CNC Machine",
+    "location": "Bay 3, Precision Machining Hall",
+    "operator": "Industrial Maintenance Worker",
+    "role": "worker",
+    "notes": "",
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 0,
+        "failure_probability": 0.01,
+        "status": "Normal"
+      },
+      "xgboost": {
+        "prediction": 0,
+        "failure_probability": 0.02,
+        "status": "Normal"
+      },
+      "consensus": {
+        "failure_probability": 0.01,
+        "health_score": 100.0,
+        "risk_level": "LOW RISK",
+        "status": "Healthy",
+        "is_calibrated": true
+      },
+      "feature_compatibility": {
+        "status": "FULL_COMPATIBILITY",
+        "is_compatible": true,
+        "full_compatibility": true,
+        "present_features": [
+          "air_temperature_k",
+          "process_temperature_k",
+          "rotational_speed_rpm",
+          "torque_nm",
+          "tool_wear_min"
+        ],
+        "missing_features": [],
+        "coverage_pct": 100.0,
+        "message": "All 5 required sensor parameters match AI4I trained models."
+      }
+    },
+    "top_shap_driver": "Torque (Nm)",
+    "shap_features": [
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 40.0,
+        "shap_impact": -2.1349,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 60.0,
+        "shap_impact": -1.6205,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1500.0,
+        "shap_impact": -0.8314,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 298.5,
+        "shap_impact": -0.3391,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 308.6,
+        "shap_impact": 0.0493,
+        "direction": "Risk Escalator (increases failure risk)"
+      }
+    ],
+    "rul_hours": 143.6,
+    "rul_cycles": 1722,
+    "recommendation": "OPTIMAL OPERATION: Tooling within safe wear envelope. Continue scheduled lubrication and monitoring.",
+    "validation_warnings": [],
+    "id": "PRED-1009",
+    "timestamp": "2026-10-26 19:26:47"
+  },
+  {
+    "machine_id": "CNC-M14860",
+    "machine_name": "Titan 5-Axis CNC Milling Center",
+    "industry": "Manufacturing",
+    "type": "CNC Machine",
+    "location": "Bay 3, Precision Machining Hall",
+    "operator": "Industrial Maintenance Worker",
+    "role": "worker",
+    "notes": "",
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 0,
+        "failure_probability": 0.01,
+        "status": "Normal"
+      },
+      "xgboost": {
+        "prediction": 0,
+        "failure_probability": 0.02,
+        "status": "Normal"
+      },
+      "consensus": {
+        "failure_probability": 0.01,
+        "health_score": 100.0,
+        "risk_level": "LOW RISK",
+        "status": "Healthy",
+        "is_calibrated": true
+      },
+      "feature_compatibility": {
+        "status": "FULL_COMPATIBILITY",
+        "is_compatible": true,
+        "full_compatibility": true,
+        "present_features": [
+          "air_temperature_k",
+          "process_temperature_k",
+          "rotational_speed_rpm",
+          "torque_nm",
+          "tool_wear_min"
+        ],
+        "missing_features": [],
+        "coverage_pct": 100.0,
+        "message": "All 5 required sensor parameters match AI4I trained models."
+      }
+    },
+    "top_shap_driver": "Torque (Nm)",
+    "shap_features": [
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 40.0,
+        "shap_impact": -2.1349,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 60.0,
+        "shap_impact": -1.6205,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1500.0,
+        "shap_impact": -0.8314,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 298.5,
+        "shap_impact": -0.3391,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 308.6,
+        "shap_impact": 0.0493,
+        "direction": "Risk Escalator (increases failure risk)"
+      }
+    ],
+    "rul_hours": 143.6,
+    "rul_cycles": 1722,
+    "recommendation": "OPTIMAL OPERATION: Tooling within safe wear envelope. Continue scheduled lubrication and monitoring.",
+    "validation_warnings": [],
+    "id": "PRED-1008",
+    "timestamp": "2026-10-26 19:11:07"
+  },
+  {
+    "machine_id": "CNC-M14860",
+    "machine_name": "Titan 5-Axis CNC Milling Center",
+    "industry": "Manufacturing",
+    "type": "CNC Machine",
+    "location": "Bay 3, Precision Machining Hall",
+    "operator": "Industrial Maintenance Worker",
+    "role": "worker",
+    "notes": "",
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 0,
+        "failure_probability": 0.01,
+        "status": "Normal"
+      },
+      "xgboost": {
+        "prediction": 0,
+        "failure_probability": 0.02,
+        "status": "Normal"
+      },
+      "consensus": {
+        "failure_probability": 0.01,
+        "health_score": 100.0,
+        "risk_level": "LOW RISK",
+        "status": "Healthy",
+        "is_calibrated": true
+      },
+      "feature_compatibility": {
+        "status": "FULL_COMPATIBILITY",
+        "is_compatible": true,
+        "full_compatibility": true,
+        "present_features": [
+          "air_temperature_k",
+          "process_temperature_k",
+          "rotational_speed_rpm",
+          "torque_nm",
+          "tool_wear_min"
+        ],
+        "missing_features": [],
+        "coverage_pct": 100.0,
+        "message": "All 5 required sensor parameters match AI4I trained models."
+      }
+    },
+    "top_shap_driver": "Torque (Nm)",
+    "shap_features": [
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 40.0,
+        "shap_impact": -2.1349,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 60.0,
+        "shap_impact": -1.6205,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1500.0,
+        "shap_impact": -0.8314,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 298.5,
+        "shap_impact": -0.3391,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 308.6,
+        "shap_impact": 0.0493,
+        "direction": "Risk Escalator (increases failure risk)"
+      }
+    ],
+    "rul_hours": 143.6,
+    "rul_cycles": 1722,
+    "recommendation": "OPTIMAL OPERATION: Tooling within safe wear envelope. Continue scheduled lubrication and monitoring.",
+    "validation_warnings": [],
+    "id": "PRED-1007",
+    "timestamp": "2026-10-26 19:08:59"
+  },
+  {
+    "machine_id": "CNC-M14860",
+    "machine_name": "Titan 5-Axis CNC Milling Center",
+    "industry": "Manufacturing",
+    "type": "CNC Machine",
+    "location": "Bay 3, Precision Machining Hall",
+    "operator": "Meghan Nuka (Worker)",
+    "role": "worker",
+    "notes": "",
+    "readings": {
+      "air_temperature_k": 300.1,
+      "process_temperature_k": 309.7,
+      "rotational_speed_rpm": 1372.0,
+      "torque_nm": 51.2,
+      "tool_wear_min": 220.0
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 0,
+        "failure_probability": 41.19,
+        "status": "Normal"
+      },
+      "xgboost": {
+        "prediction": 0,
+        "failure_probability": 33.55,
+        "status": "Normal"
+      },
+      "consensus": {
+        "failure_probability": 37.37,
+        "health_score": 62.6,
+        "risk_level": "HIGH RISK",
+        "status": "Warning"
+      }
+    },
+    "top_shap_driver": "Tool Wear (min)",
+    "shap_features": [
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 220.0,
+        "shap_impact": 3.3442,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 300.1,
+        "shap_impact": -1.3082,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1372.0,
+        "shap_impact": 0.8248,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 51.2,
+        "shap_impact": -0.3122,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 309.7,
+        "shap_impact": 0.2386,
+        "direction": "Risk Escalator (increases failure risk)"
+      }
+    ],
+    "rul_hours": 14.7,
+    "rul_cycles": 176,
+    "recommendation": "PRE-EMPTIVE INSPECTION: Machine wear approaching 80%. Prepare replacement tooling and calibrate spindle torque.",
+    "validation_warnings": [],
+    "id": "PRED-1006",
+    "timestamp": "2026-10-26 16:10:42"
+  },
+  {
+    "machine_id": "CNC-M14860",
+    "machine_name": "Titan 5-Axis CNC Milling Center",
+    "industry": "Manufacturing",
+    "type": "CNC Machine",
+    "location": "Bay 3, Precision Machining Hall",
+    "operator": "Meghan Nuka (Worker)",
+    "role": "worker",
+    "notes": "",
+    "readings": {
+      "air_temperature_k": 300.1,
+      "process_temperature_k": 309.7,
+      "rotational_speed_rpm": 1372.0,
+      "torque_nm": 51.2,
+      "tool_wear_min": 220.0
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 0,
+        "failure_probability": 41.19,
+        "status": "Normal"
+      },
+      "xgboost": {
+        "prediction": 0,
+        "failure_probability": 33.55,
+        "status": "Normal"
+      },
+      "consensus": {
+        "failure_probability": 37.37,
+        "health_score": 62.6,
+        "risk_level": "HIGH RISK",
+        "status": "Warning"
+      }
+    },
+    "top_shap_driver": "Tool Wear (min)",
+    "shap_features": [
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 220.0,
+        "shap_impact": 3.3442,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 300.1,
+        "shap_impact": -1.3082,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1372.0,
+        "shap_impact": 0.8248,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 51.2,
+        "shap_impact": -0.3122,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 309.7,
+        "shap_impact": 0.2386,
+        "direction": "Risk Escalator (increases failure risk)"
+      }
+    ],
+    "rul_hours": 14.7,
+    "rul_cycles": 176,
+    "recommendation": "PRE-EMPTIVE INSPECTION: Machine wear approaching 80%. Prepare replacement tooling and calibrate spindle torque.",
+    "validation_warnings": [],
+    "id": "PRED-1005",
+    "timestamp": "2026-10-26 16:10:40"
+  },
+  {
+    "machine_id": "CNC-M14860",
+    "machine_name": "Titan 5-Axis CNC Milling Center",
+    "industry": "Manufacturing",
+    "type": "CNC Machine",
+    "location": "Bay 3, Precision Machining Hall",
+    "operator": "Meghan Nuka (Worker)",
+    "role": "worker",
+    "notes": "",
+    "readings": {
+      "air_temperature_k": 300.1,
+      "process_temperature_k": 309.7,
+      "rotational_speed_rpm": 1372.0,
+      "torque_nm": 51.2,
+      "tool_wear_min": 220.0
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 0,
+        "failure_probability": 41.19,
+        "status": "Normal"
+      },
+      "xgboost": {
+        "prediction": 0,
+        "failure_probability": 33.55,
+        "status": "Normal"
+      },
+      "consensus": {
+        "failure_probability": 37.37,
+        "health_score": 62.6,
+        "risk_level": "HIGH RISK",
+        "status": "Warning"
+      }
+    },
+    "top_shap_driver": "Tool Wear (min)",
+    "shap_features": [
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 220.0,
+        "shap_impact": 3.3442,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 300.1,
+        "shap_impact": -1.3082,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1372.0,
+        "shap_impact": 0.8248,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 51.2,
+        "shap_impact": -0.3122,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 309.7,
+        "shap_impact": 0.2386,
+        "direction": "Risk Escalator (increases failure risk)"
+      }
+    ],
+    "rul_hours": 14.7,
+    "rul_cycles": 176,
+    "recommendation": "PRE-EMPTIVE INSPECTION: Machine wear approaching 80%. Prepare replacement tooling and calibrate spindle torque.",
+    "validation_warnings": [],
+    "id": "PRED-1004",
+    "timestamp": "2026-10-26 16:10:37"
+  },
+  {
+    "machine_id": "ROBOT-WELD-6262",
+    "machine_name": "Fanuc ARC Mate 120iD Robotic Welder",
+    "industry": "Automotive",
+    "type": "Welding Robot",
+    "location": "Sector 5, Automated Body Shop",
+    "operator": "Meghan Nuka (Lead Maintenance Worker)",
+    "role": "worker",
+    "notes": "High thermal stress and elevated electrode tip wear detected",
+    "readings": {
+      "air_temperature_k": 302.2,
+      "process_temperature_k": 312.8,
+      "rotational_speed_rpm": 1380.0,
+      "torque_nm": 62.5,
+      "tool_wear_min": 210.0,
+      "weld_voltage_v": 24.5
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 1,
+        "failure_probability": 86.0,
+        "status": "Failure Likely"
+      },
+      "xgboost": {
+        "prediction": 1,
+        "failure_probability": 98.39,
+        "status": "Failure Likely"
+      },
+      "consensus": {
+        "failure_probability": 92.19,
+        "health_score": 7.8,
+        "risk_level": "CRITICAL",
+        "status": "Critical"
+      }
+    },
+    "top_shap_driver": "Torque (Nm)",
+    "shap_features": [
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 62.5,
+        "shap_impact": 4.2709,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 210.0,
+        "shap_impact": 2.5485,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1380.0,
+        "shap_impact": 1.099,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 312.8,
+        "shap_impact": -0.2678,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 302.2,
+        "shap_impact": -0.0689,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      }
+    ],
+    "rul_hours": 19.0,
+    "rul_cycles": 227,
+    "recommendation": "PRE-EMPTIVE INSPECTION: Machine wear approaching 80%. Prepare replacement tooling and calibrate spindle torque.",
+    "validation_warnings": [],
+    "id": "PRED-1003",
+    "timestamp": "2026-10-26 16:03:19"
+  },
+  {
+    "machine_id": "ROBOT-WELD-1960",
+    "machine_name": "Fanuc ARC Mate 120iD Robotic Welder",
+    "industry": "Automotive",
+    "type": "Welding Robot",
+    "location": "Sector 5, Automated Body Shop",
+    "operator": "Meghan Nuka (Lead Maintenance Worker)",
+    "role": "worker",
+    "notes": "High thermal stress and elevated electrode tip wear detected",
+    "readings": {
+      "air_temperature_k": 302.2,
+      "process_temperature_k": 312.8,
+      "rotational_speed_rpm": 1380.0,
+      "torque_nm": 62.5,
+      "tool_wear_min": 210.0,
+      "weld_voltage_v": 24.5
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 1,
+        "failure_probability": 86.0,
+        "status": "Failure Likely"
+      },
+      "xgboost": {
+        "prediction": 1,
+        "failure_probability": 98.39,
+        "status": "Failure Likely"
+      },
+      "consensus": {
+        "failure_probability": 92.19,
+        "health_score": 7.8,
+        "risk_level": "CRITICAL",
+        "status": "Critical"
+      }
+    },
+    "top_shap_driver": "Torque (Nm)",
+    "shap_features": [
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 62.5,
+        "shap_impact": 4.2709,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 210.0,
+        "shap_impact": 2.5485,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1380.0,
+        "shap_impact": 1.099,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 312.8,
+        "shap_impact": -0.2678,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 302.2,
+        "shap_impact": -0.0689,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      }
+    ],
+    "rul_hours": 19.0,
+    "rul_cycles": 227,
+    "recommendation": "PRE-EMPTIVE INSPECTION: Machine wear approaching 80%. Prepare replacement tooling and calibrate spindle torque.",
+    "validation_warnings": [],
+    "id": "PRED-1002",
+    "timestamp": "2026-10-26 15:59:52"
+  },
+  {
+    "machine_id": "TEST-MAC-9861",
+    "machine_name": "High-Speed Milling Gantry",
+    "industry": "Manufacturing",
+    "type": "Gantry Mill",
+    "location": "Hangar 4, West Wing",
+    "operator": "Meghan Nuka",
+    "role": "worker",
+    "notes": "Routine pre-shift manual calibration check",
+    "readings": {
+      "air_temperature_k": 301.5,
+      "process_temperature_k": 311.2,
+      "rotational_speed_rpm": 1420.0,
+      "torque_nm": 55.4,
+      "tool_wear_min": 190.0
+    },
+    "predictions": {
+      "random_forest": {
+        "prediction": 0,
+        "failure_probability": 11.03,
+        "status": "Normal"
+      },
+      "xgboost": {
+        "prediction": 0,
+        "failure_probability": 2.51,
+        "status": "Normal"
+      },
+      "consensus": {
+        "failure_probability": 6.77,
+        "health_score": 93.2,
+        "risk_level": "LOW RISK",
+        "status": "Healthy"
+      }
+    },
+    "top_shap_driver": "Torque (Nm)",
+    "shap_features": [
+      {
+        "feature": "torque_nm",
+        "display_name": "Torque (Nm)",
+        "value": 55.4,
+        "shap_impact": 0.3435,
+        "direction": "Risk Escalator (increases failure risk)"
+      },
+      {
+        "feature": "air_temperature_k",
+        "display_name": "Air Temperature (K)",
+        "value": 301.5,
+        "shap_impact": -0.232,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "tool_wear_min",
+        "display_name": "Tool Wear (min)",
+        "value": 190.0,
+        "shap_impact": -0.2228,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "process_temperature_k",
+        "display_name": "Process Temperature (K)",
+        "value": 311.2,
+        "shap_impact": -0.103,
+        "direction": "Stabilizing Factor (reduces failure risk)"
+      },
+      {
+        "feature": "rotational_speed_rpm",
+        "display_name": "Rotational Speed (RPM)",
+        "value": 1420.0,
+        "shap_impact": 0.0246,
+        "direction": "Risk Escalator (increases failure risk)"
+      }
+    ],
+    "rul_hours": 34.3,
+    "rul_cycles": 411,
+    "recommendation": "PRE-EMPTIVE INSPECTION: Machine wear approaching 80%. Prepare replacement tooling and calibrate spindle torque.",
+    "validation_warnings": [],
+    "id": "PRED-1001",
+    "timestamp": "2026-10-26 15:50:26"
+  }
+]

@@ -1,0 +1,153 @@
+[
+  {
+    "id": "USR-1001",
+    "name": "Company Organiser (Ops Lead)",
+    "email": "organiser@company.com",
+    "password_hash": "b54ee6f5fd052d406d615fef0938efe4ac3d7fc2ebc2f56584fa87662925d92c",
+    "role": "organiser",
+    "department": "Fleet Operations",
+    "assigned_machines": [],
+    "permissions": [
+      "view_fleet_dashboard",
+      "register_machines",
+      "configure_sensors",
+      "dispatch_alerts",
+      "manual_prediction",
+      "view_model_benchmarks",
+      "view_audit_logs"
+    ],
+    "created_at": "2024-01-01 00:00:00"
+  },
+  {
+    "id": "WRK-2001",
+    "name": "Industrial Maintenance Worker",
+    "email": "nukameghan@gmail.com",
+    "password_hash": "312bba6ac1c4274943d7d3c1f346e8e27310c731e407ce5592d82f0d101fbff1",
+    "role": "worker",
+    "department": "Machinery Maintenance",
+    "assigned_machines": [
+      "CNC-M14860",
+      "CNC-L47181",
+      "MOT-IND-01",
+      "BRG-AUTO-03",
+      "PUMP-HP-02",
+      "COMP-GAS-05"
+    ],
+    "permissions": [
+      "view_assigned_machines",
+      "manual_prediction",
+      "view_shap",
+      "view_rul",
+      "receive_alerts",
+      "acknowledge_alerts",
+      "log_maintenance"
+    ],
+    "created_at": "2024-01-01 00:00:00"
+  },
+  {
+    "id": "WRK-2003",
+    "name": "Test Tech",
+    "email": "tech9861@company.com",
+    "password_hash": "d74ff0ee8da3b9806b18c877dbf29bbde50b5bd8e4dad7a3a725000feb82e8f1",
+    "role": "worker",
+    "department": "Field Service",
+    "assigned_machines": [
+      "CNC-M14860",
+      "CNC-L47181",
+      "MOT-IND-01",
+      "BRG-AUTO-03",
+      "PUMP-HP-02",
+      "COMP-GAS-05"
+    ],
+    "permissions": [
+      "view_assigned_machines",
+      "manual_prediction",
+      "view_shap",
+      "view_rul",
+      "receive_alerts",
+      "acknowledge_alerts",
+      "log_maintenance"
+    ],
+    "created_at": "2026-10-26 15:50:25"
+  },
+  {
+    "id": "USR-1004",
+    "name": "Dr. Marcus Vance",
+    "email": "m.vance586@company.com",
+    "password_hash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "user",
+    "department": "Quality & Reliability Engineering",
+    "assigned_machines": [],
+    "permissions": [
+      "view_fleet_dashboard",
+      "register_machines",
+      "configure_sensors",
+      "dispatch_alerts",
+      "manual_prediction",
+      "view_model_benchmarks",
+      "view_audit_logs"
+    ],
+    "created_at": "2026-10-26 15:59:52"
+  },
+  {
+    "id": "WRK-2005",
+    "name": "Alex Rivera",
+    "email": "a.rivera567@plant.com",
+    "password_hash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "worker",
+    "department": "Robotic Cell Tooling",
+    "assigned_machines": [
+      "ROBOT-WELD-1960"
+    ],
+    "permissions": [
+      "view_assigned_machines",
+      "manual_prediction",
+      "view_shap",
+      "view_rul",
+      "receive_alerts",
+      "acknowledge_alerts",
+      "log_maintenance"
+    ],
+    "created_at": "2026-10-26 15:59:52"
+  },
+  {
+    "id": "USR-1006",
+    "name": "Dr. Marcus Vance",
+    "email": "m.vance887@company.com",
+    "password_hash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "user",
+    "department": "Quality & Reliability Engineering",
+    "assigned_machines": [],
+    "permissions": [
+      "view_fleet_dashboard",
+      "register_machines",
+      "configure_sensors",
+      "dispatch_alerts",
+      "manual_prediction",
+      "view_model_benchmarks",
+      "view_audit_logs"
+    ],
+    "created_at": "2026-10-26 16:03:19"
+  },
+  {
+    "id": "WRK-2007",
+    "name": "Alex Rivera",
+    "email": "a.rivera669@plant.com",
+    "password_hash": "ef92b778bafe771e89245b89ecbc08a44a4e166c06659911881f383d4473e94f",
+    "role": "worker",
+    "department": "Robotic Cell Tooling",
+    "assigned_machines": [
+      "ROBOT-WELD-6262"
+    ],
+    "permissions": [
+      "view_assigned_machines",
+      "manual_prediction",
+      "view_shap",
+      "view_rul",
+      "receive_alerts",
+      "acknowledge_alerts",
+      "log_maintenance"
+    ],
+    "created_at": "2026-10-26 16:03:19"
+  }
+]

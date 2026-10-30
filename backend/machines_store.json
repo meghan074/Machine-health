@@ -1,0 +1,1590 @@
+[
+  {
+    "id": "TEST-MAC-9861",
+    "name": "High-Speed Milling Gantry",
+    "industry": "Manufacturing",
+    "type": "Gantry Mill",
+    "location": "Hangar 4, West Wing",
+    "description": "Precision gantry mill for composite wing spars",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Air Temperature",
+        "unit": "K",
+        "min": 295.0,
+        "max": 305.0,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Process Temperature",
+        "unit": "K",
+        "min": 305.0,
+        "max": 315.0,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Spindle / Rotor Speed",
+        "unit": "RPM",
+        "min": 1100.0,
+        "max": 2800.0,
+        "nominal": 1500.0
+      },
+      {
+        "key": "torque_nm",
+        "label": "Operating Torque",
+        "unit": "Nm",
+        "min": 10.0,
+        "max": 75.0,
+        "nominal": 40.0
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Tool Wear Accumulated",
+        "unit": "min",
+        "min": 0.0,
+        "max": 250.0,
+        "nominal": 60.0
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 287.4,
+        "process_temperature_k": 297.2,
+        "rotational_speed_rpm": 1444,
+        "torque_nm": 38.5,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 307.8,
+        "process_temperature_k": 318.2,
+        "rotational_speed_rpm": 1546,
+        "torque_nm": 41.2,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 295.1,
+        "process_temperature_k": 305.1,
+        "rotational_speed_rpm": 1483,
+        "torque_nm": 39.5,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 306.2,
+        "process_temperature_k": 316.5,
+        "rotational_speed_rpm": 1538,
+        "torque_nm": 41.0,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 287.6,
+        "process_temperature_k": 297.3,
+        "rotational_speed_rpm": 1445,
+        "torque_nm": 38.5,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 294.3,
+        "process_temperature_k": 304.2,
+        "rotational_speed_rpm": 1478,
+        "torque_nm": 39.4,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 297.9,
+        "process_temperature_k": 308.0,
+        "rotational_speed_rpm": 1497,
+        "torque_nm": 39.9,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 305.2,
+        "process_temperature_k": 315.6,
+        "rotational_speed_rpm": 1533,
+        "torque_nm": 40.9,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 304.7,
+        "process_temperature_k": 315.0,
+        "rotational_speed_rpm": 1531,
+        "torque_nm": 40.8,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 308.9,
+        "process_temperature_k": 319.3,
+        "rotational_speed_rpm": 1552,
+        "torque_nm": 41.4,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 303.2,
+        "process_temperature_k": 313.5,
+        "rotational_speed_rpm": 1523,
+        "torque_nm": 40.6,
+        "tool_wear_min": 59
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 302.0,
+        "process_temperature_k": 312.2,
+        "rotational_speed_rpm": 1517,
+        "torque_nm": 40.5,
+        "tool_wear_min": 59
+      }
+    ],
+    "registered_at": "2026-10-26 15:50:25"
+  },
+  {
+    "id": "ROBOT-WELD-1960",
+    "name": "Fanuc ARC Mate 120iD Robotic Welder",
+    "industry": "Automotive",
+    "type": "Welding Robot",
+    "location": "Sector 5, Automated Body Shop",
+    "description": "6-axis robotic welding arm with servo gun torque monitoring",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Ambient Cell Temp",
+        "unit": "K",
+        "min": 295.0,
+        "max": 305.0,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Weld Tip Temp",
+        "unit": "K",
+        "min": 305.0,
+        "max": 315.0,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Servo Motor Speed",
+        "unit": "RPM",
+        "min": 1100.0,
+        "max": 2800.0,
+        "nominal": 1480.0
+      },
+      {
+        "key": "torque_nm",
+        "label": "Gun Clamp Torque",
+        "unit": "Nm",
+        "min": 10.0,
+        "max": 75.0,
+        "nominal": 44.0
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Electrode Tip Wear",
+        "unit": "min",
+        "min": 0.0,
+        "max": 250.0,
+        "nominal": 75.0
+      },
+      {
+        "key": "weld_voltage_v",
+        "label": "Arc Voltage",
+        "unit": "V",
+        "min": 18.0,
+        "max": 36.0,
+        "nominal": 24.5
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1480.0,
+      "torque_nm": 44.0,
+      "tool_wear_min": 75.0
+    },
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 301.0,
+        "process_temperature_k": 311.2,
+        "rotational_speed_rpm": 1492,
+        "torque_nm": 44.4,
+        "tool_wear_min": 69
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 295.2,
+        "process_temperature_k": 305.2,
+        "rotational_speed_rpm": 1463,
+        "torque_nm": 43.5,
+        "tool_wear_min": 69
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 295.1,
+        "process_temperature_k": 305.1,
+        "rotational_speed_rpm": 1463,
+        "torque_nm": 43.5,
+        "tool_wear_min": 70
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 298.0,
+        "process_temperature_k": 308.1,
+        "rotational_speed_rpm": 1477,
+        "torque_nm": 43.9,
+        "tool_wear_min": 70
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 297.1,
+        "process_temperature_k": 307.2,
+        "rotational_speed_rpm": 1473,
+        "torque_nm": 43.8,
+        "tool_wear_min": 71
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 306.4,
+        "process_temperature_k": 316.8,
+        "rotational_speed_rpm": 1519,
+        "torque_nm": 45.2,
+        "tool_wear_min": 71
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 292.1,
+        "process_temperature_k": 302.0,
+        "rotational_speed_rpm": 1448,
+        "torque_nm": 43.1,
+        "tool_wear_min": 72
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 288.6,
+        "process_temperature_k": 298.4,
+        "rotational_speed_rpm": 1431,
+        "torque_nm": 42.5,
+        "tool_wear_min": 72
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 296.2,
+        "process_temperature_k": 306.3,
+        "rotational_speed_rpm": 1468,
+        "torque_nm": 43.7,
+        "tool_wear_min": 73
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 292.0,
+        "process_temperature_k": 301.9,
+        "rotational_speed_rpm": 1447,
+        "torque_nm": 43.0,
+        "tool_wear_min": 73
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 304.3,
+        "process_temperature_k": 314.6,
+        "rotational_speed_rpm": 1508,
+        "torque_nm": 44.9,
+        "tool_wear_min": 74
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 305.5,
+        "process_temperature_k": 315.8,
+        "rotational_speed_rpm": 1514,
+        "torque_nm": 45.0,
+        "tool_wear_min": 74
+      }
+    ],
+    "registered_at": "2026-10-26 15:59:50"
+  },
+  {
+    "id": "ROBOT-WELD-6262",
+    "name": "Fanuc ARC Mate 120iD Robotic Welder",
+    "industry": "Automotive",
+    "type": "Welding Robot",
+    "location": "Sector 5, Automated Body Shop",
+    "description": "6-axis robotic welding arm with servo gun torque monitoring",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Ambient Cell Temp",
+        "unit": "K",
+        "min": 295.0,
+        "max": 305.0,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Weld Tip Temp",
+        "unit": "K",
+        "min": 305.0,
+        "max": 315.0,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Servo Motor Speed",
+        "unit": "RPM",
+        "min": 1100.0,
+        "max": 2800.0,
+        "nominal": 1480.0
+      },
+      {
+        "key": "torque_nm",
+        "label": "Gun Clamp Torque",
+        "unit": "Nm",
+        "min": 10.0,
+        "max": 75.0,
+        "nominal": 44.0
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Electrode Tip Wear",
+        "unit": "min",
+        "min": 0.0,
+        "max": 250.0,
+        "nominal": 75.0
+      },
+      {
+        "key": "weld_voltage_v",
+        "label": "Arc Voltage",
+        "unit": "V",
+        "min": 18.0,
+        "max": 36.0,
+        "nominal": 24.5
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1480.0,
+      "torque_nm": 44.0,
+      "tool_wear_min": 75.0
+    },
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 296.1,
+        "process_temperature_k": 306.1,
+        "rotational_speed_rpm": 1468,
+        "torque_nm": 43.6,
+        "tool_wear_min": 69
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 299.3,
+        "process_temperature_k": 309.5,
+        "rotational_speed_rpm": 1484,
+        "torque_nm": 44.1,
+        "tool_wear_min": 69
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 287.6,
+        "process_temperature_k": 297.3,
+        "rotational_speed_rpm": 1425,
+        "torque_nm": 42.4,
+        "tool_wear_min": 70
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 293.8,
+        "process_temperature_k": 303.8,
+        "rotational_speed_rpm": 1456,
+        "torque_nm": 43.3,
+        "tool_wear_min": 70
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 293.3,
+        "process_temperature_k": 303.3,
+        "rotational_speed_rpm": 1454,
+        "torque_nm": 43.2,
+        "tool_wear_min": 71
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 291.0,
+        "process_temperature_k": 300.9,
+        "rotational_speed_rpm": 1442,
+        "torque_nm": 42.9,
+        "tool_wear_min": 71
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 302.0,
+        "process_temperature_k": 312.3,
+        "rotational_speed_rpm": 1497,
+        "torque_nm": 44.5,
+        "tool_wear_min": 72
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 289.6,
+        "process_temperature_k": 299.4,
+        "rotational_speed_rpm": 1435,
+        "torque_nm": 42.7,
+        "tool_wear_min": 72
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 309.6,
+        "process_temperature_k": 320.0,
+        "rotational_speed_rpm": 1534,
+        "torque_nm": 45.6,
+        "tool_wear_min": 73
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 292.7,
+        "process_temperature_k": 302.6,
+        "rotational_speed_rpm": 1451,
+        "torque_nm": 43.1,
+        "tool_wear_min": 73
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 295.9,
+        "process_temperature_k": 305.9,
+        "rotational_speed_rpm": 1467,
+        "torque_nm": 43.6,
+        "tool_wear_min": 74
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 304.7,
+        "process_temperature_k": 315.0,
+        "rotational_speed_rpm": 1510,
+        "torque_nm": 44.9,
+        "tool_wear_min": 74
+      }
+    ],
+    "registered_at": "2026-10-26 16:03:18"
+  },
+  {
+    "id": "MAC-4138",
+    "name": "Yarn machine",
+    "industry": "Manufacturing",
+    "type": "CNC Milling Center",
+    "location": "Bay 4",
+    "description": "CNC Milling Center operational asset stationed at Bay 4",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Air Temperature",
+        "unit": "K",
+        "min": 295,
+        "max": 305,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Process Temperature",
+        "unit": "K",
+        "min": 305,
+        "max": 315,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Rotational / Spindle Speed",
+        "unit": "RPM",
+        "min": 1100,
+        "max": 2800,
+        "nominal": 1500
+      },
+      {
+        "key": "torque_nm",
+        "label": "Operating Torque",
+        "unit": "Nm",
+        "min": 10,
+        "max": 75,
+        "nominal": 40
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Tool Wear Accumulated",
+        "unit": "min",
+        "min": 0,
+        "max": 250,
+        "nominal": 60
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 302.8,
+        "process_temperature_k": 313.0,
+        "rotational_speed_rpm": 1521,
+        "torque_nm": 40.6,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 290.8,
+        "process_temperature_k": 300.6,
+        "rotational_speed_rpm": 1461,
+        "torque_nm": 39.0,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 301.5,
+        "process_temperature_k": 311.7,
+        "rotational_speed_rpm": 1515,
+        "torque_nm": 40.4,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 293.8,
+        "process_temperature_k": 303.8,
+        "rotational_speed_rpm": 1476,
+        "torque_nm": 39.4,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 292.1,
+        "process_temperature_k": 301.9,
+        "rotational_speed_rpm": 1467,
+        "torque_nm": 39.1,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 292.2,
+        "process_temperature_k": 302.1,
+        "rotational_speed_rpm": 1468,
+        "torque_nm": 39.2,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 291.7,
+        "process_temperature_k": 301.6,
+        "rotational_speed_rpm": 1465,
+        "torque_nm": 39.1,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 286.6,
+        "process_temperature_k": 296.3,
+        "rotational_speed_rpm": 1440,
+        "torque_nm": 38.4,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 309.6,
+        "process_temperature_k": 320.0,
+        "rotational_speed_rpm": 1555,
+        "torque_nm": 41.5,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 307.6,
+        "process_temperature_k": 318.0,
+        "rotational_speed_rpm": 1545,
+        "torque_nm": 41.2,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 302.2,
+        "process_temperature_k": 312.4,
+        "rotational_speed_rpm": 1518,
+        "torque_nm": 40.5,
+        "tool_wear_min": 59
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 294.8,
+        "process_temperature_k": 304.8,
+        "rotational_speed_rpm": 1481,
+        "torque_nm": 39.5,
+        "tool_wear_min": 59
+      }
+    ],
+    "registered_at": "2026-10-26 16:09:21"
+  },
+  {
+    "id": "TEST-REG-352",
+    "name": "Test Injected Machine",
+    "industry": "Automotive",
+    "type": "Lathe",
+    "location": "Zone B",
+    "description": "Lathe operational asset stationed at Zone B",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Air Temperature",
+        "unit": "K",
+        "min": 295.0,
+        "max": 305.0,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Process Temperature",
+        "unit": "K",
+        "min": 305.0,
+        "max": 315.0,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Spindle / Rotor Speed",
+        "unit": "RPM",
+        "min": 1100.0,
+        "max": 2800.0,
+        "nominal": 1500.0
+      },
+      {
+        "key": "torque_nm",
+        "label": "Operating Torque",
+        "unit": "Nm",
+        "min": 10.0,
+        "max": 75.0,
+        "nominal": 40.0
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Tool Wear Accumulated",
+        "unit": "min",
+        "min": 0.0,
+        "max": 250.0,
+        "nominal": 60.0
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "connection_status": "SIMULATED",
+    "telemetry_source": "SIMULATED",
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 299.7,
+        "process_temperature_k": 309.84,
+        "rotational_speed_rpm": 1506,
+        "torque_nm": 40.16,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 303.38,
+        "process_temperature_k": 313.64,
+        "rotational_speed_rpm": 1524,
+        "torque_nm": 40.65,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 288.69,
+        "process_temperature_k": 298.45,
+        "rotational_speed_rpm": 1450,
+        "torque_nm": 38.68,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 297.91,
+        "process_temperature_k": 307.99,
+        "rotational_speed_rpm": 1497,
+        "torque_nm": 39.92,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 293.43,
+        "process_temperature_k": 303.36,
+        "rotational_speed_rpm": 1474,
+        "torque_nm": 39.32,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 302.51,
+        "process_temperature_k": 312.74,
+        "rotational_speed_rpm": 1520,
+        "torque_nm": 40.54,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 304.47,
+        "process_temperature_k": 314.77,
+        "rotational_speed_rpm": 1529,
+        "torque_nm": 40.8,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 308.44,
+        "process_temperature_k": 318.87,
+        "rotational_speed_rpm": 1549,
+        "torque_nm": 41.33,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 293.26,
+        "process_temperature_k": 303.19,
+        "rotational_speed_rpm": 1473,
+        "torque_nm": 39.3,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 305.89,
+        "process_temperature_k": 316.24,
+        "rotational_speed_rpm": 1537,
+        "torque_nm": 40.99,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 296.09,
+        "process_temperature_k": 306.11,
+        "rotational_speed_rpm": 1487,
+        "torque_nm": 39.68,
+        "tool_wear_min": 59
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 298.56,
+        "process_temperature_k": 308.66,
+        "rotational_speed_rpm": 1500,
+        "torque_nm": 40.01,
+        "tool_wear_min": 59
+      }
+    ],
+    "registered_at": "2026-10-26 18:59:12"
+  },
+  {
+    "id": "TEST-REG-777",
+    "name": "Test Injected Machine",
+    "industry": "Automotive",
+    "type": "Lathe",
+    "location": "Zone B",
+    "description": "Lathe operational asset stationed at Zone B",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Air Temperature",
+        "unit": "K",
+        "min": 295.0,
+        "max": 305.0,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Process Temperature",
+        "unit": "K",
+        "min": 305.0,
+        "max": 315.0,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Spindle / Rotor Speed",
+        "unit": "RPM",
+        "min": 1100.0,
+        "max": 2800.0,
+        "nominal": 1500.0
+      },
+      {
+        "key": "torque_nm",
+        "label": "Operating Torque",
+        "unit": "Nm",
+        "min": 10.0,
+        "max": 75.0,
+        "nominal": 40.0
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Tool Wear Accumulated",
+        "unit": "min",
+        "min": 0.0,
+        "max": 250.0,
+        "nominal": 60.0
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "connection_status": "SIMULATED",
+    "telemetry_source": "SIMULATED",
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 289.43,
+        "process_temperature_k": 299.23,
+        "rotational_speed_rpm": 1454,
+        "torque_nm": 38.79,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 309.55,
+        "process_temperature_k": 320.03,
+        "rotational_speed_rpm": 1555,
+        "torque_nm": 41.48,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 294.73,
+        "process_temperature_k": 304.7,
+        "rotational_speed_rpm": 1481,
+        "torque_nm": 39.49,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 289.89,
+        "process_temperature_k": 299.69,
+        "rotational_speed_rpm": 1456,
+        "torque_nm": 38.85,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 308.85,
+        "process_temperature_k": 319.31,
+        "rotational_speed_rpm": 1552,
+        "torque_nm": 41.39,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 287.24,
+        "process_temperature_k": 296.96,
+        "rotational_speed_rpm": 1443,
+        "torque_nm": 38.49,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 302.84,
+        "process_temperature_k": 313.08,
+        "rotational_speed_rpm": 1521,
+        "torque_nm": 40.58,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 301.74,
+        "process_temperature_k": 311.95,
+        "rotational_speed_rpm": 1516,
+        "torque_nm": 40.43,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 287.06,
+        "process_temperature_k": 296.77,
+        "rotational_speed_rpm": 1442,
+        "torque_nm": 38.47,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 296.82,
+        "process_temperature_k": 306.86,
+        "rotational_speed_rpm": 1491,
+        "torque_nm": 39.78,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 309.57,
+        "process_temperature_k": 320.05,
+        "rotational_speed_rpm": 1555,
+        "torque_nm": 41.48,
+        "tool_wear_min": 59
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 291.12,
+        "process_temperature_k": 300.97,
+        "rotational_speed_rpm": 1462,
+        "torque_nm": 39.01,
+        "tool_wear_min": 59
+      }
+    ],
+    "registered_at": "2026-10-26 19:06:17"
+  },
+  {
+    "id": "TEST-REG-876",
+    "name": "Test Injected Machine",
+    "industry": "Automotive",
+    "type": "Lathe",
+    "location": "Zone B",
+    "description": "Lathe operational asset stationed at Zone B",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Air Temperature",
+        "unit": "K",
+        "min": 295.0,
+        "max": 305.0,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Process Temperature",
+        "unit": "K",
+        "min": 305.0,
+        "max": 315.0,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Spindle / Rotor Speed",
+        "unit": "RPM",
+        "min": 1100.0,
+        "max": 2800.0,
+        "nominal": 1500.0
+      },
+      {
+        "key": "torque_nm",
+        "label": "Operating Torque",
+        "unit": "Nm",
+        "min": 10.0,
+        "max": 75.0,
+        "nominal": 40.0
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Tool Wear Accumulated",
+        "unit": "min",
+        "min": 0.0,
+        "max": 250.0,
+        "nominal": 60.0
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "connection_status": "SIMULATED",
+    "telemetry_source": "SIMULATED",
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 305.73,
+        "process_temperature_k": 316.07,
+        "rotational_speed_rpm": 1536,
+        "torque_nm": 40.97,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 307.14,
+        "process_temperature_k": 317.53,
+        "rotational_speed_rpm": 1543,
+        "torque_nm": 41.16,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 309.75,
+        "process_temperature_k": 320.23,
+        "rotational_speed_rpm": 1556,
+        "torque_nm": 41.51,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 308.42,
+        "process_temperature_k": 318.86,
+        "rotational_speed_rpm": 1549,
+        "torque_nm": 41.33,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 286.65,
+        "process_temperature_k": 296.35,
+        "rotational_speed_rpm": 1440,
+        "torque_nm": 38.41,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 304.11,
+        "process_temperature_k": 314.4,
+        "rotational_speed_rpm": 1528,
+        "torque_nm": 40.75,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 303.87,
+        "process_temperature_k": 314.15,
+        "rotational_speed_rpm": 1526,
+        "torque_nm": 40.72,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 294.09,
+        "process_temperature_k": 304.04,
+        "rotational_speed_rpm": 1477,
+        "torque_nm": 39.41,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 292.31,
+        "process_temperature_k": 302.2,
+        "rotational_speed_rpm": 1468,
+        "torque_nm": 39.17,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 287.42,
+        "process_temperature_k": 297.14,
+        "rotational_speed_rpm": 1444,
+        "torque_nm": 38.52,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 301.26,
+        "process_temperature_k": 311.45,
+        "rotational_speed_rpm": 1513,
+        "torque_nm": 40.37,
+        "tool_wear_min": 59
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 287.73,
+        "process_temperature_k": 297.46,
+        "rotational_speed_rpm": 1445,
+        "torque_nm": 38.56,
+        "tool_wear_min": 59
+      }
+    ],
+    "registered_at": "2026-10-26 19:07:56"
+  },
+  {
+    "id": "TEST-REG-938",
+    "name": "Test Injected Machine",
+    "industry": "Automotive",
+    "type": "Lathe",
+    "location": "Zone B",
+    "description": "Lathe operational asset stationed at Zone B",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Air Temperature",
+        "unit": "K",
+        "min": 295,
+        "max": 305,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Process Temperature",
+        "unit": "K",
+        "min": 305,
+        "max": 315,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Rotational / Spindle Speed",
+        "unit": "RPM",
+        "min": 1100,
+        "max": 2800,
+        "nominal": 1500
+      },
+      {
+        "key": "torque_nm",
+        "label": "Operating Torque",
+        "unit": "Nm",
+        "min": 10,
+        "max": 75,
+        "nominal": 40
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Tool Wear Accumulated",
+        "unit": "min",
+        "min": 0,
+        "max": 250,
+        "nominal": 60
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "connection_status": "SIMULATED",
+    "telemetry_source": "SIMULATED",
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 292.06,
+        "process_temperature_k": 301.94,
+        "rotational_speed_rpm": 1467,
+        "torque_nm": 39.14,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 300.35,
+        "process_temperature_k": 310.51,
+        "rotational_speed_rpm": 1509,
+        "torque_nm": 40.25,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 300.36,
+        "process_temperature_k": 310.52,
+        "rotational_speed_rpm": 1509,
+        "torque_nm": 40.25,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 294.36,
+        "process_temperature_k": 304.32,
+        "rotational_speed_rpm": 1479,
+        "torque_nm": 39.45,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 298.5,
+        "process_temperature_k": 308.6,
+        "rotational_speed_rpm": 1499,
+        "torque_nm": 40.0,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 298.18,
+        "process_temperature_k": 308.27,
+        "rotational_speed_rpm": 1498,
+        "torque_nm": 39.96,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 305.16,
+        "process_temperature_k": 315.48,
+        "rotational_speed_rpm": 1533,
+        "torque_nm": 40.89,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 297.92,
+        "process_temperature_k": 308.01,
+        "rotational_speed_rpm": 1497,
+        "torque_nm": 39.92,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 292.94,
+        "process_temperature_k": 302.85,
+        "rotational_speed_rpm": 1472,
+        "torque_nm": 39.25,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 304.52,
+        "process_temperature_k": 314.83,
+        "rotational_speed_rpm": 1530,
+        "torque_nm": 40.81,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 296.09,
+        "process_temperature_k": 306.11,
+        "rotational_speed_rpm": 1487,
+        "torque_nm": 39.68,
+        "tool_wear_min": 59
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 297.81,
+        "process_temperature_k": 307.88,
+        "rotational_speed_rpm": 1496,
+        "torque_nm": 39.91,
+        "tool_wear_min": 59
+      }
+    ],
+    "registered_at": "2026-10-26 19:08:58"
+  },
+  {
+    "id": "TEST-REG-66",
+    "name": "Test Injected Machine",
+    "industry": "Automotive",
+    "type": "Lathe",
+    "location": "Zone B",
+    "description": "Lathe operational asset stationed at Zone B",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Air Temperature",
+        "unit": "K",
+        "min": 295.0,
+        "max": 305.0,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Process Temperature",
+        "unit": "K",
+        "min": 305.0,
+        "max": 315.0,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Spindle / Rotor Speed",
+        "unit": "RPM",
+        "min": 1100.0,
+        "max": 2800.0,
+        "nominal": 1500.0
+      },
+      {
+        "key": "torque_nm",
+        "label": "Operating Torque",
+        "unit": "Nm",
+        "min": 10.0,
+        "max": 75.0,
+        "nominal": 40.0
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Tool Wear Accumulated",
+        "unit": "min",
+        "min": 0.0,
+        "max": 250.0,
+        "nominal": 60.0
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "connection_status": "SIMULATED",
+    "telemetry_source": "SIMULATED",
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 289.12,
+        "process_temperature_k": 298.9,
+        "rotational_speed_rpm": 1452,
+        "torque_nm": 38.74,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 294.32,
+        "process_temperature_k": 304.28,
+        "rotational_speed_rpm": 1479,
+        "torque_nm": 39.44,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 300.01,
+        "process_temperature_k": 310.16,
+        "rotational_speed_rpm": 1507,
+        "torque_nm": 40.2,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 286.79,
+        "process_temperature_k": 296.49,
+        "rotational_speed_rpm": 1441,
+        "torque_nm": 38.43,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 296.82,
+        "process_temperature_k": 306.87,
+        "rotational_speed_rpm": 1491,
+        "torque_nm": 39.78,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 301.82,
+        "process_temperature_k": 312.03,
+        "rotational_speed_rpm": 1516,
+        "torque_nm": 40.45,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 303.56,
+        "process_temperature_k": 313.83,
+        "rotational_speed_rpm": 1525,
+        "torque_nm": 40.68,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 286.95,
+        "process_temperature_k": 296.66,
+        "rotational_speed_rpm": 1441,
+        "torque_nm": 38.45,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 306.01,
+        "process_temperature_k": 316.37,
+        "rotational_speed_rpm": 1537,
+        "torque_nm": 41.01,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 299.11,
+        "process_temperature_k": 309.23,
+        "rotational_speed_rpm": 1503,
+        "torque_nm": 40.08,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 299.87,
+        "process_temperature_k": 310.01,
+        "rotational_speed_rpm": 1506,
+        "torque_nm": 40.18,
+        "tool_wear_min": 59
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 305.57,
+        "process_temperature_k": 315.91,
+        "rotational_speed_rpm": 1535,
+        "torque_nm": 40.95,
+        "tool_wear_min": 59
+      }
+    ],
+    "registered_at": "2026-10-26 19:11:06"
+  },
+  {
+    "id": "TEST-REG-6",
+    "name": "Test Injected Machine",
+    "industry": "Automotive",
+    "type": "Lathe",
+    "location": "Zone B",
+    "description": "Lathe operational asset stationed at Zone B",
+    "sensor_definitions": [
+      {
+        "key": "air_temperature_k",
+        "label": "Air Temperature",
+        "unit": "K",
+        "min": 295.0,
+        "max": 305.0,
+        "nominal": 298.5
+      },
+      {
+        "key": "process_temperature_k",
+        "label": "Process Temperature",
+        "unit": "K",
+        "min": 305.0,
+        "max": 315.0,
+        "nominal": 308.6
+      },
+      {
+        "key": "rotational_speed_rpm",
+        "label": "Spindle / Rotor Speed",
+        "unit": "RPM",
+        "min": 1100.0,
+        "max": 2800.0,
+        "nominal": 1500.0
+      },
+      {
+        "key": "torque_nm",
+        "label": "Operating Torque",
+        "unit": "Nm",
+        "min": 10.0,
+        "max": 75.0,
+        "nominal": 40.0
+      },
+      {
+        "key": "tool_wear_min",
+        "label": "Tool Wear Accumulated",
+        "unit": "min",
+        "min": 0.0,
+        "max": 250.0,
+        "nominal": 60.0
+      }
+    ],
+    "readings": {
+      "air_temperature_k": 298.5,
+      "process_temperature_k": 308.6,
+      "rotational_speed_rpm": 1500.0,
+      "torque_nm": 40.0,
+      "tool_wear_min": 60.0
+    },
+    "connection_status": "SIMULATED",
+    "telemetry_source": "SIMULATED",
+    "history": [
+      {
+        "timestamp": "-60m",
+        "air_temperature_k": 295.03,
+        "process_temperature_k": 305.01,
+        "rotational_speed_rpm": 1482,
+        "torque_nm": 39.53,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-55m",
+        "air_temperature_k": 307.64,
+        "process_temperature_k": 318.05,
+        "rotational_speed_rpm": 1545,
+        "torque_nm": 41.22,
+        "tool_wear_min": 54
+      },
+      {
+        "timestamp": "-50m",
+        "air_temperature_k": 295.66,
+        "process_temperature_k": 305.66,
+        "rotational_speed_rpm": 1485,
+        "torque_nm": 39.62,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-45m",
+        "air_temperature_k": 291.34,
+        "process_temperature_k": 301.2,
+        "rotational_speed_rpm": 1464,
+        "torque_nm": 39.04,
+        "tool_wear_min": 55
+      },
+      {
+        "timestamp": "-40m",
+        "air_temperature_k": 302.87,
+        "process_temperature_k": 313.11,
+        "rotational_speed_rpm": 1521,
+        "torque_nm": 40.58,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-35m",
+        "air_temperature_k": 307.4,
+        "process_temperature_k": 317.8,
+        "rotational_speed_rpm": 1544,
+        "torque_nm": 41.19,
+        "tool_wear_min": 56
+      },
+      {
+        "timestamp": "-30m",
+        "air_temperature_k": 301.36,
+        "process_temperature_k": 311.56,
+        "rotational_speed_rpm": 1514,
+        "torque_nm": 40.38,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-25m",
+        "air_temperature_k": 291.72,
+        "process_temperature_k": 301.59,
+        "rotational_speed_rpm": 1465,
+        "torque_nm": 39.09,
+        "tool_wear_min": 57
+      },
+      {
+        "timestamp": "-20m",
+        "air_temperature_k": 296.56,
+        "process_temperature_k": 306.6,
+        "rotational_speed_rpm": 1490,
+        "torque_nm": 39.74,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-15m",
+        "air_temperature_k": 302.64,
+        "process_temperature_k": 312.88,
+        "rotational_speed_rpm": 1520,
+        "torque_nm": 40.56,
+        "tool_wear_min": 58
+      },
+      {
+        "timestamp": "-10m",
+        "air_temperature_k": 299.06,
+        "process_temperature_k": 309.18,
+        "rotational_speed_rpm": 1502,
+        "torque_nm": 40.07,
+        "tool_wear_min": 59
+      },
+      {
+        "timestamp": "-5m",
+        "air_temperature_k": 296.43,
+        "process_temperature_k": 306.46,
+        "rotational_speed_rpm": 1489,
+        "torque_nm": 39.72,
+        "tool_wear_min": 59
+      }
+    ],
+    "registered_at": "2026-10-26 19:26:46"
+  }
+]
